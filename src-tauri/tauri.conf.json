@@ -6,8 +6,8 @@
   "build": {
     "frontendDist": "../dist",
     "devUrl": "http://localhost:3000",
-    "beforeDevCommand": "yarn web",
-    "beforeBuildCommand": "yarn web:build"
+    "beforeDevCommand": "npm run web",
+    "beforeBuildCommand": "npm run web:build"
   },
   "app": {
     "windows": [

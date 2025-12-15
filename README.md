@@ -4,8 +4,7 @@ Cross-platform AI chat application built with React Native and Tauri.
 
 ## Prerequisites
 
-- Node.js >= 18
-- Yarn
+- Node.js >= 22
 - Rust (for desktop builds)
 - Xcode (for iOS/macOS)
 - Android Studio (for Android)
@@ -13,7 +12,7 @@ Cross-platform AI chat application built with React Native and Tauri.
 ## Install Dependencies
 
 ```bash
-yarn install
+npm install
 ```
 
 ## Build Instructions
@@ -21,7 +20,7 @@ yarn install
 ### Android
 
 ```bash
-yarn android
+npm run android
 ```
 
 Requires Android Studio with SDK and an emulator or connected device.
@@ -29,7 +28,7 @@ Requires Android Studio with SDK and an emulator or connected device.
 ### iOS
 
 ```bash
-yarn ios
+npm run ios
 ```
 
 Requires Xcode and CocoaPods. Run `cd ios && pod install` first if needed.
@@ -37,7 +36,7 @@ Requires Xcode and CocoaPods. Run `cd ios && pod install` first if needed.
 ### macOS
 
 ```bash
-yarn tauri:build --target universal-apple-darwin
+npm run tauri:build -- --target universal-apple-darwin
 ```
 
 Produces a `.dmg` installer in `src-tauri/target/release/bundle/`.
@@ -45,7 +44,7 @@ Produces a `.dmg` installer in `src-tauri/target/release/bundle/`.
 ### Windows
 
 ```bash
-yarn tauri:build
+npm run tauri:build
 ```
 
 Produces an `.msi` installer in `src-tauri/target/release/bundle/`.
@@ -53,7 +52,7 @@ Produces an `.msi` installer in `src-tauri/target/release/bundle/`.
 ### Linux
 
 ```bash
-yarn tauri:build
+npm run tauri:build
 ```
 
 Produces `.deb` and `.AppImage` packages in `src-tauri/target/release/bundle/`.
@@ -62,8 +61,8 @@ Produces `.deb` and `.AppImage` packages in `src-tauri/target/release/bundle/`.
 
 ```bash
 # Mobile
-yarn start          # Start Metro bundler
+npm start          # Start Metro bundler
 
 # Desktop
-yarn tauri:dev      # Start Tauri dev server
+npm run tauri:dev  # Start Tauri dev server
 ```
