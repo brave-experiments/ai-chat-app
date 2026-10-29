@@ -23,7 +23,7 @@
     "react-native-web": "0.21.2"
   },
   "devDependencies": {
-    "@babel/core": "7.28.5",
+    "@babel/core": "7.29.7",
     "@babel/preset-env": "7.28.5",
     "@babel/runtime": "7.28.4",
     "@react-native-community/cli": "18.0.1",
@@ -43,7 +43,7 @@
     "prettier": "2.8.8",
     "react-test-renderer": "19.1.1",
     "typescript": "5.9.3",
-    "vite": "7.3.2"
+    "vite": "7.3.7"
   },
   "engines": {
     "node": ">=22"
